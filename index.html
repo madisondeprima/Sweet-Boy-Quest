@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maddie's Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game-shell">
+    <header class="topbar">
+      <div>
+        <h1>Maddie's Quest</h1>
+        <p id="level-label">Prologue — MFG Staff</p>
+      </div>
+      <div class="controls">WASD / Arrow Keys · E = interact</div>
+    </header>
+
+    <section class="game-wrap">
+      <canvas id="game" width="960" height="540" aria-label="Pixel art game"></canvas>
+
+      <div id="dialogue" class="panel hidden" aria-live="polite">
+        <div id="speaker"></div>
+        <div id="dialogue-text"></div>
+        <button id="dialogue-next">Continue</button>
+      </div>
+
+      <div id="phone" class="overlay hidden">
+        <div class="phone">
+          <div class="phone-head">Messages</div>
+          <div id="messages" class="messages"></div>
+          <button id="close-phone">Close</button>
+        </div>
+      </div>
+
+      <div id="phase10" class="overlay hidden">
+        <div class="mini-card">
+          <h2>Phase 10</h2>
+          <p>Phase 1: <strong>two sets of four</strong></p>
+          <p id="phase-status">Your turn. The game is secretly rigged so you win.</p>
+          <div id="phase-hand" class="cards"></div>
+          <button id="phase-draw">Draw Card</button>
+          <button id="phase-play">Play Winning Phase</button>
+        </div>
+      </div>
+
+      <div id="pool" class="overlay hidden">
+        <div class="mini-card">
+          <h2>Basement Pool</h2>
+          <p id="pool-status">Line up your shot.</p>
+          <div class="pool-table">
+            <div class="ball white"></div>
+            <div class="ball target"></div>
+            <div class="pocket p1"></div>
+            <div class="pocket p2"></div>
+            <div class="pocket p3"></div>
+            <div class="pocket p4"></div>
+            <div class="pocket p5"></div>
+            <div class="pocket p6"></div>
+          </div>
+          <button id="pool-shoot">Shoot</button>
+        </div>
+      </div>
+
+      <div id="journal" class="overlay hidden">
+        <div class="journal">
+          <h2>Maddie's Journal</h2>
+          <div id="journal-content"></div>
+          <button id="journal-close">Close</button>
+        </div>
+      </div>
+
+      <div id="letter" class="overlay hidden">
+        <div class="letter">
+          <div class="envelope-title">📜 A Letter from Maddie</div>
+          <div id="letter-text"></div>
+          <button id="letter-next">Read</button>
+        </div>
+      </div>
+
+      <div id="choice" class="overlay hidden">
+        <div class="choice-card">
+          <h2>One last question...</h2>
+          <p>Will you be my boyfriend?</p>
+          <div class="choices">
+            <button id="yes">YES ❤️</button>
+            <button id="no">NO</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="ending" class="overlay hidden">
+        <div class="ending-card">
+          <h2 id="ending-title"></h2>
+          <p id="ending-text"></p>
+          <button id="restart">Play Again</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>❤️ Memories discovered: <strong id="memory-count">0</strong>/5</span>
+      <span>Level: <strong id="level-number">Prologue</strong></span>
+    </footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
