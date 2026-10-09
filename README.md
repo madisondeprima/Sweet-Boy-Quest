@@ -1,2 +1,2 @@
 # Sweet Boy's Adventure ❤️
-Upload `index.html`, `style.css`, `game.js`, and `README.md` to your GitHub repository and enable Pages in Settings → Pages. Controls: WASD/arrows move Cai, E interacts. Collect the 24 oz iced dirty chai with oat milk at Tate Street, then walk left to return it to the dorm. Phase 10 goal: complete two sets of four. On the pool table, click to aim the visible cue stick and press E to shoot. The final scene is a Lucky 32 dinner date, followed by Maddie's letter and a celebratory dance if YES is chosen. Art is original pixel art inspired by cozy RPGs.
+
